@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ARCANE Features</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8fafc;
+      color: #222;
+    }
+
+    header {
+      background: #0f172a;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a.active, nav a:hover {
+      color: #60a5fa;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #60a5fa, #3b82f6);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .features-section {
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature-box {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+    }
+
+    .feature-box h3 {
+      margin: 15px 0 10px;
+      color: #1e3a8a;
+    }
+
+    .feature-box p {
+      color: #555;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #eee;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="arcane_logo.png" alt="ARCANE Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="features.html" class="active">Features</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>ARCANE Features</h1>
+    <p>Discover what powers the future of smart autonomous driving.</p>
+  </section>
+
+  <section class="features-section">
+    <div class="feature-grid">
+      <div class="feature-box">
+        <h3>🎙 Voice Command</h3>
+        <p>Control the vehicle using smart, responsive voice assistant technology powered by NEON AI.</p>
+      </div>
+      <div class="feature-box">
+        <h3>📡 Live Location Tracking</h3>
+        <p>Real-time GPS tracking and map integration via web dashboard or mobile companion.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🧠 AI Decision Engine</h3>
+        <p>Smart behavior modeled on traffic rules, voice understanding, and real-time responses.</p>
+      </div>
+      <div class="feature-box">
+        <h3>📱 Web Dashboard</h3>
+        <p>Browser-based interface for controlling, monitoring, and tracking ARCANE anytime, anywhere.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🔋 Smart Power Management</h3>
+        <p>Real-time sensor data monitoring energy usage per component to optimize performance.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🌐 Cloud Ready</h3>
+        <p>Cloud integration ready for future scale-up and smart city compatibility.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 ARCANE Technologies. Designed with passion by Roshan Sarmah 🚗</p>
+  </footer>
+
+</body>
+</html>

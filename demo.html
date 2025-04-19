@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARCANE Live Demo</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f7fa;
+      color: #111;
+    }
+    header {
+      background: #0f172a;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+    }
+    nav a.active, nav a:hover {
+      color: #60a5fa;
+    }
+    .logo {
+      height: 50px;
+    }
+    .hero {
+      background: linear-gradient(to right, #0ea5e9, #0284c7);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .video-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    iframe, video {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 40px 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      background: #0f172a;
+      color: #eee;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="arcane_logo.png" alt="ARCANE Logo" class="logo" />
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="demo.html" class="active">Live Demo</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>ARCANE Live Demo</h1>
+  <p>Watch ARCANE in action – voice commands, smart dashboard, and AI control.</p>
+</section>
+
+<section class="video-container">
+  <!-- Embed YouTube video here -->
+  <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="ARCANE Demo Video" frameborder="0" allowfullscreen></iframe>
+</section>
+
+<section class="gallery">
+  <img src="assets/demo_1.png" alt="ARCANE demo screenshot 1">
+  <img src="assets/demo_2.png" alt="ARCANE demo screenshot 2">
+  <img src="assets/demo_3.png" alt="ARCANE demo screenshot 3">
+</section>
+
+<footer>
+  <p>© 2025 ARCANE Technologies. All rights reserved. Designed by Roshan Sarmah</p>
+</footer>
+
+</body>
+</html>

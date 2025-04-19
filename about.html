@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About ARCANE</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #ffffff, #f0f0f0);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #000000;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover,
+    .active {
+      color: #00bcd4;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background-image: linear-gradient(135deg, #00bcd4 0%, #2196f3 100%);
+      color: white;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .about-content {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+      animation: slideUp 1.2s ease-in-out;
+    }
+
+    .about-content h2 {
+      color: #2196f3;
+      margin-bottom: 10px;
+    }
+
+    .highlight-box {
+      background-color: #e3f2fd;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+      box-shadow: 0 0 10px rgba(0, 188, 212, 0.1);
+    }
+
+    .highlight-box ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      background-color: #000;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="about-page">
+
+  <header>
+    <img src="arcane_logo.png" alt="ARCANE Logo" class="logo"/>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>About ARCANE</h1>
+    <p>The future of smart mobility driven by AI and real-time intelligence.</p>
+  </section>
+
+  <section class="about-content">
+    <h2>What is ARCANE?</h2>
+    <p>
+      ARCANE is an AI-powered autonomous car platform designed for futuristic travel. It integrates real-time voice assistance, location tracking, advanced navigation, and smart energy systems, redefining how we experience driving and safety.
+    </p>
+
+    <h2>Our Vision</h2>
+    <p>
+      To build an intelligent, efficient, and sustainable future for autonomous vehicles, blending AI, IoT, and human-like interaction for a seamless driving experience.
+    </p>
+
+    <div class="highlight-box">
+      <h3>💡 Innovative Features</h3>
+      <ul>
+        <li>AI Command Recognition</li>
+        <li>Real-time Web Control</li>
+        <li>Voice Navigation & Control</li>
+        <li>Live GPS Tracking</li>
+        <li>Cloud-Based Monitoring</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 ARCANE Technologies. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
